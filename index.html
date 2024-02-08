@@ -1,63 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fifi: Nanny Recruiting</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    header {
-      background-color: #008080;
-      color: #ffffff;
-      padding: 10px 0;
-      text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-    .main-content {
-      text-align: center;
-      margin-top: 50px;
-    }
-    .btn {
-      background-color: #008080;
-      color: #ffffff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1.1rem;
-      margin-top: 20px;
-      display: inline-block;
-    }
-    .btn:hover {
-      background-color: #005757;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifi That Lady - Job Listings</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Fifi: Nanny Recruiting</h1>
-  </header>
-  <div class="container">
-    <div class="main-content">
-      <h2>Find Your Perfect Nanny Today!</h2>
-      <p>We connect families with qualified, experienced nannies.</p>
-      <a href="#" class="btn">Get Started</a>
-    </div>
-  </div>
+    <header>
+        <h1>Welcome to Fifi That Lady - Job Listings</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="filter">
+            <h2>Filter Job Listings</h2>
+            <form id="filter-form">
+                <label for="keyword">Keyword:</label>
+                <input type="text" id="keyword" name="keyword" placeholder="Enter keyword">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter location">
+                <button type="submit">Filter</button>
+            </form>
+        </section>
+        <section id="job-listings">
+            <!-- Job listings will be dynamically added here using JavaScript -->
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
 

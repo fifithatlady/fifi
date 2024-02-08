@@ -1,0 +1,114 @@
+{
+    "jobs": [
+        {
+            "title": "Full-time Nanny",
+            "description": "We are looking for a full-time nanny to take care of our two children.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["full-time", "nanny", "children"]
+        },
+        {
+            "title": "Part-time Nanny",
+            "description": "Seeking a part-time nanny for after-school care for our child.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["part-time", "nanny", "after-school"]
+        },
+        {
+            "title": "Live-in Nanny",
+            "description": "Looking for a live-in nanny to care for our newborn baby.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["live-in", "nanny", "newborn"]
+        },
+        {
+            "title": "Full-time Nanny",
+            "description": "We are looking for a full-time nanny to take care of our two children.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["full-time", "nanny", "children"]
+        },
+        {
+            "title": "Part-time Nanny",
+            "description": "Seeking a part-time nanny for after-school care for our child.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["part-time", "nanny", "after-school"]
+        },
+        {
+            "title": "Live-in Nanny",
+            "description": "Looking for a live-in nanny to care for our newborn baby.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["live-in", "nanny", "newborn"]
+        },
+        {
+            "title": "Babysitter Needed",
+            "description": "We need a reliable babysitter for occasional evenings.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["babysitter", "occasional", "evenings"]
+        },
+        {
+            "title": "Nanny Share Opportunity",
+            "description": "Join our nanny share arrangement for cost-effective childcare.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["nanny share", "childcare", "cost-effective"]
+        },
+        {
+            "title": "Experienced Nanny",
+            "description": "Seeking an experienced nanny for our busy household.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["experienced", "nanny", "household"]
+        },
+        {
+            "title": "After-school Care Provider",
+            "description": "We're looking for someone to provide after-school care for our three kids.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["after-school care", "childcare", "kids"]
+        },
+        {
+            "title": "Weekend Nanny",
+            "description": "Seeking a nanny to help on weekends with our twins.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["weekend", "nanny", "twins"]
+        },
+        {
+            "title": "Night Nanny",
+            "description": "We need a night nanny to assist with our newborn during the night.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["night", "nanny", "newborn"]
+        },
+        {
+            "title": "Full-time Nanny",
+            "description": "We are looking for a full-time nanny to take care of our two children.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["full-time", "nanny", "children"]
+        },
+        {
+            "title": "Part-time Nanny",
+            "description": "Seeking a part-time nanny for after-school care for our child.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["part-time", "nanny", "after-school"]
+        },
+        {
+            "title": "Live-in Nanny",
+            "description": "Looking for a live-in nanny to care for our newborn baby.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["live-in", "nanny", "newborn"]
+        },
+        {
+            "title": "Babysitter Needed",
+            "description": "We need a reliable babysitter for occasional evenings.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["babysitter", "occasional", "evenings"]
+        },
+        {
+            "title": "Nanny Share Opportunity",
+            "description": "Join our nanny share arrangement for cost-effective childcare.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["nanny share", "childcare", "cost-effective"]
+        },
+        {
+            "title": "Experienced Nanny",
+            "description": "Seeking an experienced nanny for our busy household.",
+            "location": "Cape Town, South Africa",
+            "keywords": ["experienced", "nanny", "household"]
+        }
+        // Add more job listings here...
+    ]
+}
+
