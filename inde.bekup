@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fifi That Lady</title>
+    <title>Welcome to Fifi That Lady</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +14,6 @@
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="https://github.com/fifithatlady/fifi.git" class="btn">Visit Project</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -54,22 +51,7 @@
                 <a href="https://github.com/fifithatlady/fifi.git">GitHub Repository</a>
             </div>
         </section>
-
-        <section id="filter">
-            <h2>Filter Job Listings</h2>
-            <form id="filter-form">
-                <label for="keyword">Keyword:</label>
-                <input type="text" id="keyword" name="keyword" placeholder="Enter keyword">
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location" placeholder="Enter location">
-                <button type="submit">Filter</button>
-            </form>
-        </section>
-        <section id="job-listings">
-            <!-- Job listings will be dynamically added here using JavaScript -->
-        </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
 
