@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickSearch Estates</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Performance Optimization: Add async attribute to improve loading -->
+    <script src="/index.js" async></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="https://www.krismaholdings.tech" class="navbar-brand">QuickSearch Estates</a>
+                <ul class="navbar-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#signin">Sign In</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Find Your Dream Home</h1>
+                <p>Welcome to QuickSearch Estates, your premier destination for real estate listings.</p>
+                <a href="#search" class="btn">Start Searching</a>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>QuickSearch Estates is dedicated to providing innovative solutions for buying and selling properties. Our platform simplifies the real estate process, making it easier for everyone involved.</p>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:info@krismaholdings.tech">info@krismaholdings.tech</a>.</p>
+            </div>
+        </section>
+
+        <!-- Sign In section -->
+        <section id="signin" class="section">
+            <div class="container">
+                <h2>Sign In</h2>
+                <form id="signInForm" action="https://www.krismaholdings.tech/signin" method="POST" class="form">
+                    <!-- Sign in form fields -->
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit" class="btn">Sign In</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sign Up section -->
+        <section id="signup" class="section">
+            <div class="container">
+                <h2>Sign Up</h2>
+                <form id="signUpForm" action="https://www.krismaholdings.tech/signup" method="POST" class="form">
+                    <!-- Sign up form fields -->
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 QuickSearch Estates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Anchor tag for scrolling to the bottom of the page -->
+    <a id="search"></a>
+</body>
+</html>
+
