@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fifithatlady nanny jobs</title>
+    <title>QuickSearch Estates</title>
     <link rel="stylesheet" href="/styles.css">
     <!-- Performance Optimization: Add async attribute to improve loading -->
     <script src="/index.js" async></script>
@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar">
             <div class="container">
-                <a href="https://www.fifithatlady.tech" class="navbar-brand">fifithatlady nanny jobs</a>
+                <a href="https://www.krismaholdings.tech" class="navbar-brand">QuickSearch Estates</a>
                 <ul class="navbar-menu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -30,7 +30,7 @@
         <section class="hero">
             <div class="container">
                 <h1>Find Your Dream Home</h1>
-                <p>Welcome to fifithatlady nanny jobs, your premier destination for au pair listings.</p>
+                <p>Welcome to QuickSearch Estates, your premier destination for real estate listings.</p>
                 <a href="#search" class="btn">Start Searching</a>
             </div>
         </section>
@@ -39,7 +39,7 @@
         <section id="about" class="section">
             <div class="container">
                 <h2>About Us</h2>
-                <p>fifithatlady is dedicated to providing innovative au pair and nanny jobs solutions. Our platform simplifies the child caring  process, making it easier for everyone involved.</p>
+                <p>QuickSearch Estates is dedicated to providing innovative solutions for buying and selling properties. Our platform simplifies the real estate process, making it easier for everyone involved.</p>
             </div>
         </section>
 
@@ -47,7 +47,7 @@
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact Us</h2>
-                <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:felistasfenyere2224@gmail.com">fifithatlady.tech</a>.</p>
+                <p>If you have any questions or inquiries, feel free to contact us at <a href="mailto:info@krismaholdings.tech">info@krismaholdings.tech</a>.</p>
             </div>
         </section>
 
@@ -55,7 +55,7 @@
         <section id="signin" class="section">
             <div class="container">
                 <h2>Sign In</h2>
-                <form id="signInForm" action="https://www.fifithatlady.tech/signin" method="POST" class="form">
+                <form id="signInForm" action="https://www.krismaholdings.tech/signin" method="POST" class="form">
                     <!-- Sign in form fields -->
                     <input type="email" name="email" placeholder="Email" required>
                     <input type="password" name="password" placeholder="Password" required>
@@ -68,7 +68,7 @@
         <section id="signup" class="section">
             <div class="container">
                 <h2>Sign Up</h2>
-                <form id="signUpForm" action="https://www.fifithatlady.tech/signup" method="POST" class="form">
+                <form id="signUpForm" action="https://www.krismaholdings.tech/signup" method="POST" class="form">
                     <!-- Sign up form fields -->
                     <input type="text" name="username" placeholder="Username" required>
                     <input type="email" name="email" placeholder="Email" required>
@@ -82,7 +82,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 fifithatlady nanny jobs. All rights reserved.</p>
+            <p>&copy; 2024 QuickSearch Estates. All rights reserved.</p>
         </div>
     </footer>
 

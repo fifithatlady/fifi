@@ -23,29 +23,29 @@ async function signUp(username, email, password) {
     }
 }
 
-// Function to list a property by a seller
-async function listProperty(propertyData) {
+// Function to list a nanny job by a provider
+async function listNannyJob(nannyJobData) {
     try {
-        const response = await fetch('/api/properties/list', {
+        const response = await fetch('/api/nanny-jobs/list', {
             method: 'POST',
-            body: propertyData
+            body: nannyJobData
         });
 
         if (!response.ok) {
-            throw new Error('Failed to list property. Please try again.');
+            throw new Error('Failed to list nanny job. Please try again.');
         }
 
         const responseData = await response.json();
-        console.log('Property listed successfully:', responseData);
+        console.log('Nanny job listed successfully:', responseData);
     } catch (error) {
-        console.error('Error listing property:', error.message);
+        console.error('Error listing nanny job:', error.message);
     }
 }
 
-// Function to search properties with filters
-async function searchPropertiesWithFilters(filters) {
+// Function to search nanny jobs with filters
+async function searchNannyJobsWithFilters(filters) {
     try {
-        const response = await fetch('/api/properties/search', {
+        const response = await fetch('/api/nanny-jobs/search', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -54,35 +54,35 @@ async function searchPropertiesWithFilters(filters) {
         });
 
         if (!response.ok) {
-            throw new Error('Failed to search properties. Please try again.');
+            throw new Error('Failed to search nanny jobs. Please try again.');
         }
 
-        const properties = await response.json();
-        displaySearchResults(properties);
-        displayPropertiesOnMap(properties);
+        const nannyJobs = await response.json();
+        displaySearchResults(nannyJobs);
+        displayNannyJobsOnMap(nannyJobs);
     } catch (error) {
-        console.error('Error searching properties:', error.message);
+        console.error('Error searching nanny jobs:', error.message);
     }
 }
 
-// Function to save a property as a favorite for a user
-async function saveFavoriteProperty(userId, propertyId) {
+// Function to save a nanny job as a favorite for a user
+async function saveFavoriteNannyJob(userId, nannyJobId) {
     try {
         const response = await fetch(`/api/users/${userId}/favorites`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ propertyId })
+            body: JSON.stringify({ nannyJobId })
         });
 
         if (!response.ok) {
-            throw new Error('Failed to save property as favorite. Please try again.');
+            throw new Error('Failed to save nanny job as favorite. Please try again.');
         }
 
-        console.log('Property saved as favorite successfully.');
+        console.log('Nanny job saved as favorite successfully.');
     } catch (error) {
-        console.error('Error saving property as favorite:', error.message);
+        console.error('Error saving nanny job as favorite:', error.message);
     }
 }
 
@@ -95,25 +95,25 @@ document.getElementById('signUpForm').addEventListener('submit', async function(
     await signUp(username, email, password);
 });
 
-// Event listener for property listing form submission (for sellers)
-document.getElementById('listPropertyForm').addEventListener('submit', async function(event) {
+// Event listener for nanny job listing form submission (for providers)
+document.getElementById('listNannyJobForm').addEventListener('submit', async function(event) {
     event.preventDefault(); // Prevent default form submission behavior
-    const propertyData = new FormData(this);
-    await listProperty(propertyData);
+    const nannyJobData = new FormData(this);
+    await listNannyJob(nannyJobData);
 });
 
-// Event listener for property search form submission (for buyers)
-document.getElementById('propertySearchForm').addEventListener('submit', async function(event) {
+// Event listener for nanny job search form submission (for families)
+document.getElementById('nannyJobSearchForm').addEventListener('submit', async function(event) {
     event.preventDefault(); // Prevent default form submission behavior
     const searchFilters = {}; // Implement logic to collect search filters from the form
-    await searchPropertiesWithFilters(searchFilters);
+    await searchNannyJobsWithFilters(searchFilters);
 });
 
-// Event listener for saving a property as favorite
+// Event listener for saving a nanny job as favorite
 document.getElementById('saveFavoriteBtn').addEventListener('click', async function(event) {
     event.preventDefault(); // Prevent default link behavior
     const userId = 'user123'; // Replace with the logged-in user's ID
-    const propertyId = 'property456'; // Replace with the ID of the property to save
-    await saveFavoriteProperty(userId, propertyId);
+    const nannyJobId = 'nannyJob456'; // Replace with the ID of the nanny job to save
+    await saveFavoriteNannyJob(userId, nannyJobId);
 });
 
