@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Example deployment script for QuickSearch Estates on Heroku with MySQL
+# Example deployment script for fifithalady_nanny_jobs on Heroku with MySQL
 
 # Step 1: Login to Heroku (if not already logged in)
 echo "Step 1: Logging in to Heroku..."
@@ -8,7 +8,7 @@ heroku login -i
 
 # Step 2: Create a new Heroku app
 echo "Step 2: Creating a new Heroku app..."
-heroku create quicksearch-estate
+heroku create fifithalady_nanny_jobs
 
 # Step 3: Add ClearDB MySQL add-on
 echo "Step 3: Adding ClearDB MySQL add-on..."
