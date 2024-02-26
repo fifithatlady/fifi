@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Navigate to the project root directory
-cd /QuickSearch_Estates || exit
+cd /fifi || exit
 
 # Backend setup
 echo "Setting up backend..."
