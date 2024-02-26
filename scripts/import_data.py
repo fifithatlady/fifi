@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
 """
-Script to import data into QuickSearch Estates database
+Script to import data into the Fifithatlady Nanny Jobs database
 """
 
 import argparse
 import json
 from models import db_session
-from models.property import Property
+from models.fifithatlady_nanny_job import FifithatladyNannyJob
 
 def import_data(file_path):
     """Import data from a JSON file into the database."""
@@ -20,7 +20,7 @@ def import_data(file_path):
                     print("Error: Invalid data format. Missing required fields.")
                     return
                 
-                property_data = {
+                nanny_job_data = {
                     'title': item['title'],
                     'description': item['description'],
                     'price': item['price'],
@@ -32,8 +32,8 @@ def import_data(file_path):
                     'user_id': item['user_id'],
                     'security': item['security'],
                 }
-                property_obj = Property(**property_data)
-                db_session.add(property_obj)
+                nanny_job_obj = FifithatladyNannyJob(**nanny_job_data)
+                db_session.add(nanny_job_obj)
 
         db_session.commit()
         print("Data imported successfully.")
@@ -45,7 +45,7 @@ def import_data(file_path):
         print(f"Error: {e}")
 
 def main():
-    parser = argparse.ArgumentParser(description="Import data into QuickSearch Estates database")
+    parser = argparse.ArgumentParser(description="Import data into the Fifithatlady Nanny Jobs database")
     parser.add_argument("file_path", help="Path to the JSON file containing data")
     args = parser.parse_args()
 
