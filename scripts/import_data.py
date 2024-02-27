@@ -16,7 +16,7 @@ def import_data(file_path):
             data = json.load(file)
             for item in data:
                 # Validate data before processing
-                if not all(key in item for key in ['title', 'description', 'price', 'bedrooms', 'bathrooms', 'area', 'address', 'city_id', 'user_id', 'security']):
+                if not all(key in item for key in ['title', 'description', 'price', 'area', 'address', 'city_id', 'user_id', 'security']):
                     print("Error: Invalid data format. Missing required fields.")
                     return
                 
@@ -24,8 +24,6 @@ def import_data(file_path):
                     'title': item['title'],
                     'description': item['description'],
                     'price': item['price'],
-                    'bedrooms': item['bedrooms'],
-                    'bathrooms': item['bathrooms'],
                     'area': item['area'],
                     'address': item['address'],
                     'city_id': item['city_id'],
