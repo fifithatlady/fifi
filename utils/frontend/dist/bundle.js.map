@@ -1,0 +1,40 @@
+{
+    "version": 3,
+    "file": "bundle.js",
+    "mappings": "MACA,MAAMA,EAAaC,SAASC,cAAc,eAC1CF,EAAWG,iBAAiB,UAAUC,UAClCC,EAAEC,iBAGF,MAAMC,EAAW,IAAIC,SAASR,GAE9B,IAEI,MAAMS,QAAiBC,MAAM,kDAAmD,CAC5EC,OAAQ,OACRC,KAAML,IAIV,GAAIE,EAASI,GAETC,OAAOC,SAASC,KAAO,qDACpB,CAEH,MAAMC,QAAqBR,EAASS,OACpCC,MAAMF,EACV,CACJ,CAAE,MAAOG,GAELC,QAAQD,MAAM,SAAUA,GACxBD,MAAM,wDACV,KAIJ,MAAMG,EAAqBrB,SAASC,cAAc,uBAClDoB,EAAmBnB,iBAAiB,UAAUC,UAC1CC,EAAEC,iBAGF,MAAMC,EAAW,IAAIC,SAASc,GAE9B,IAEI,MAAMb,QAAiBC,MAAM,6DAA8D,CACvFC,OAAQ,OACRC,KAAML,IAIV,GAAIE,EAASI,GAmBSU,QAjBOd,EAASe,OAmB1CH,QAAQI,IAAIF,OAfD,CAEH,MAAMN,QAAqBR,EAASS,OACpCC,MAAMF,EACV,CACJ,CAAE,MAAOG,GAELC,QAAQD,MAAM,SAAUA,GACxBD,MAAM,wDACV,CAIJ,IAA8BI,CAJ1B,G",
+    "sources": [
+        "webpack://quicksearch-estates-frontend/./src/index.js"
+    ],
+    "sourcesContent": [
+        "// Function to handle sign up form submission\nconst signUpForm = document.querySelector('#signUpForm');\nsignUpForm.addEventListener('submit', async (e) => {\n    e.preventDefault();\n\n    // Get form data\n    const formData = new FormData(signUpForm);\n\n    try {\n        // Send POST request to backend API endpoint for sign up\n        const response = await fetch('https://fifithatlady.github.io/api/signup', {\n            method: 'POST',\n            body: formData\n        });\n\n        // Check if request was successful\n        if (response.ok) {\n            // Redirect user to dashboard or another page upon successful sign up\n            window.location.href = 'https://fifithatlady.github.io/dashboard';\n        } else {\n            // Display error message if sign up failed\n            const errorMessage = await response.text();\n            alert(errorMessage);\n        }\n    } catch (error) {\n        // Handle any errors that occurred during the fetch operation\n        console.error('Error:', error);\n        alert('An unexpected error occurred. Please try again later.');\n    }\n});\n\n// Function to handle property search form submission\nconst propertySearchForm = document.querySelector('#propertySearchForm');\npropertySearchForm.addEventListener('submit', async (e) => {\n    e.preventDefault();\n\n    // Get form data\n    const formData = new FormData(propertySearchForm);\n\n    try {\n        // Send POST request to backend API endpoint for property search\n        const response = await fetch('https://fifithatlady.github.io/api/properties/search', {\n            method: 'POST',\n            body: formData\n        });\n\n        // Check if request was successful\n        if (response.ok) {\n            // Parse response JSON\n            const properties = await response.json();\n\n            // Display search results on the page (e.g., populate a list with property details)\n            displaySearchResults(properties);\n        } else {\n            // Display error message if property search failed\n            const errorMessage = await response.text();\n            alert(errorMessage);\n        }\n    } catch (error) {\n        // Handle any errors that occurred during the fetch operation\n        console.error('Error:', error);\n        alert('An unexpected error occurred. Please try again later.');\n    }\n});\n\n// Function to display search results on the page\nfunction displaySearchResults(properties) {\n    // Implement logic to display search results (e.g., populate a list with property details)\n    console.log(properties);\n}\n"
+    ],
+    "names": [
+        "signUpForm",
+        "document",
+        "querySelector",
+        "addEventListener",
+        "async",
+        "e",
+        "preventDefault",
+        "formData",
+        "FormData",
+        "response",
+        "fetch",
+        "method",
+        "body",
+        "ok",
+        "window",
+        "location",
+        "href",
+        "errorMessage",
+        "text",
+        "alert",
+        "error",
+        "console",
+        "propertySearchForm",
+        "properties",
+        "json",
+        "log"
+    ],
+    "sourceRoot": ""
+}
